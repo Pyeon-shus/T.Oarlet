@@ -36,7 +36,7 @@ try:
 except discord.errors.LoginFailure as e:
     print("Improper token has been passed.")
 
-
+channel = client.get_channel(1120388385735983125)# 출력할 채널 ID를 넣어주세요
 # 웹 페이지에 GET 요청을 보냅니다.
 url = 'https://alba.huplux.com/index.php?region=%EB%B6%80%EC%82%B0&q=s'
 response = requests.get(url)
