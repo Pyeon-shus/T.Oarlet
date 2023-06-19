@@ -110,16 +110,16 @@ for div in inner_divs:
         time.sleep(1)
     time.sleep(5)
 
-#@client.event
-#async def on_message(message):
-#    if message.author == client.user:
-#        return
-#
-#    if message.content == f'{PREFIX}call':
-#        await message.channel.send("callback!")
-#
-#    if message.content.startswith(f'{PREFIX}hello'):
-#        await message.channel.send('Hello!')
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content == f'{PREFIX}call':
+        await message.channel.send("callback!")
+
+    if message.content.startswith(f'{PREFIX}hello'):
+        await message.channel.send('Hello!')
 
 
 try:
